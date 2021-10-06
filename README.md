@@ -10,4 +10,4 @@ crud con diseño minimalista utilizando local storage como bd y SweetAlert
 
 --
 
-> Importante: es necesario que lo ejecutes con servidor en vivo, para que no ocurran problemas con otros navegadores
+> Importante: es necesario que lo ejecutes con live server, para que no ocurran problemas con otros navegadores
