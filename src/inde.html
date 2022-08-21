@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es-ES">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://img.icons8.com/emoji/48/000000/dog-emoji.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Form - lp1 </title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+
+<body>
+    <div class="fondo"></div>
+    <nav>
+        <div class="logo" id="logo">
+            <img src="https://img.icons8.com/emoji/48/000000/dog-emoji.png" />
+        </div>
+        <div class="git" id="github">
+            <img src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png" />
+        </div>
+        <div class="info" id="info" style="cursor: pointer;">
+            <img src="https://img.icons8.com/color/48/000000/info--v1.png" />
+        </div>
+    </nav>
+    <div class="body">
+        <div class="form" id="form">
+            <form id="formEventos">
+                <h3>EVENTO</h3>
+                <input type="text" placeholder="nombre del evento" id="name-event" required>
+                <br>
+                <input type="date" placeholder="fecha" id="fecha-evento" required>
+                <br>
+                <!--radios button-->
+                <div class="radios">
+                    <input type="radio" id="privado" name="evento" value="privado">
+                    <label for="html">Privado</label>
+                    <br>
+                    <input type="radio" id="publico" name="evento" value="publico">
+                    <label for="css">Publico</label>
+                    <br>
+                    <input type="radio" id="vip" name="evento" value="vip">
+                    <label for="vip">VIP</label>
+                </div>
+                <!--textarea-->
+                <textarea name="desc-evento" id="descripcion" cols="30" placeholder="descripcion del evento" rows="10" required></textarea> <br>
+                <div class="btn">
+                    <button type="submit" id="pps" class="submit">Registrar</button>
+                    <input type="button" class="clear" onclick="limpiarForm()" value="Limpiar">
+                </div>
+            </form>
+        </div>
+        <div class="vista">
+            <div class="cabecera">
+                <div class="eventosTotal">
+                    <h5>Nuemero total de actividades</h5>
+                    <div>
+                        <span id="numEvents">~</span>
+                        <i class="fab fa-accusoft"></i>
+                    </div>
+                </div>
+                <div class="eventoProximo">
+                    <h5>Fecha del evento proximo</h5>
+                    <div>
+                        <span id="fechaProx">2020-09-20</span>
+                        <i class="far fa-calendar-check"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="eventos" id="cards-eventos">
+                <div class="card-evento">
+                    <div class="datos">
+                        <h6>Nombre del evento</h6>
+                        <span><small><i> <b>tipoEvent</b> </i></small></span>
+                        <span><small><i> · fecha </i></small></span>
+                    </div>
+                    <div class="btns-crud">
+                        <button class="btn-update">Actualizar</button>
+                        <button class="clear">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="crud.js"></script>
+    <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+</body>
+
+</html>
