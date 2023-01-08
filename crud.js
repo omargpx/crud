@@ -211,10 +211,10 @@ function reaccion(e) {
 
 function git(e) {
     e.preventDefault();
-    window.location.href = "https://github.com/omarguerrer";
+    window.location.href = "https://github.com/omargpx";
 }
 
 function refreshCrud(e) {
     e.preventDefault();
-    window.location.href = "inde.html";
+    window.location.href = "index.html";
 }
